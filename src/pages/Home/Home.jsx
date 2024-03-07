@@ -20,10 +20,10 @@ const Home = () => {
       <section className="about_section">
         <div className="about_img">
           <div className="about_img_left">
-            <img src="/public/img/about1.png" alt="" />
-            <img src="/public/img/about2.jpg" alt="" />
+            <img src="/img/about1.png" alt="" />
+            <img src="/img/about2.jpg" alt="" />
           </div>
-          <img className="right_img" src="/public/img/about3.jpg" alt="" />
+          <img className="right_img" src="/img/about3.jpg" alt="" />
         </div>
         <article className="about_content">
           <h2>About</h2>
@@ -73,7 +73,7 @@ const Home = () => {
                   <p>view more</p> <ArrowBright2 />
                 </div>
               </div>
-              <img src="/public/img/projects1.jpg" alt="" />
+              <img src="/img/projects1.jpg" alt="" />
             </div>
             <div className="project_animation">
               <div className="upper_img"> </div>
@@ -83,7 +83,7 @@ const Home = () => {
                   <p>view more</p> <ArrowBright2 />
                 </div>
               </div>
-              <img src="/public/img/projects2.jpg" alt="" />
+              <img src="/img/projects2.jpg" alt="" />
             </div>
           </div>
           <div className="projects_img_wrapper">
@@ -95,7 +95,7 @@ const Home = () => {
                   <p>view more</p> <ArrowBright2 />
                 </div>
               </div>
-              <img src="/public/img/projects3.jpg" alt="" />
+              <img src="/img/projects3.jpg" alt="" />
             </div>
             <div className="project_animation">
               <div className="upper_img"> </div>
@@ -105,7 +105,7 @@ const Home = () => {
                   <p>view more</p> <ArrowBright2 />
                 </div>
               </div>
-              <img src="/public/img/projects4.jpg" alt="" />
+              <img src="/img/projects4.jpg" alt="" />
             </div>
             <div className="project_animation">
               <div className="upper_img"> </div>
@@ -115,7 +115,7 @@ const Home = () => {
                   <p>view more</p> <ArrowBright2 />
                 </div>
               </div>
-              <img src="/public/img/projects5.jpg" alt="" />
+              <img src="/img/projects5.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ const Home = () => {
               <ArrowBright />
             </div>
           </form>
-          <img src="/public/img/contact.jpg" alt="" />
+          <img src="/img/contact.jpg" alt="" />
         </article>
       </section>
     </div>
