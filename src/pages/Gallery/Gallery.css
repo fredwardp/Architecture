@@ -1,0 +1,25 @@
+main {
+  margin-top: 63px;
+  margin-bottom: 230px;
+}
+
+main h1 {
+  max-width: 6ch;
+  margin-bottom: 61px;
+}
+main h1 span {
+  display: block;
+  text-transform: none;
+}
+
+.photo_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.photo_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}

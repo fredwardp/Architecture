@@ -1,0 +1,36 @@
+nav {
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  fill: var(--dark);
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+nav div a {
+  font-size: 12px;
+  padding: 5px;
+  color: var(--dark);
+  letter-spacing: 2px;
+  border-block: 1px solid transparent;
+}
+
+nav div a:hover {
+  border-block: 1px solid var(--dark);
+}
+
+.toggle {
+  margin-left: 40px;
+}
+
+.toggle_click {
+  cursor: pointer;
+}

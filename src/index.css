@@ -1,0 +1,139 @@
+@font-face {
+  font-family: roboto_reg;
+  src: url(../public/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto_light;
+  src: url(../public/fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: roboto_bold;
+  src: url(../public/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: roboto_black;
+  src: url(../public/fonts/Roboto/Roboto-Black.ttf);
+}
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: roboto_reg;
+}
+
+:root {
+  --black: #000000;
+  --dark: #343434;
+  --grey: #c4c4c4;
+  --light-grey: #f2f2f2;
+  --white: #ffffff;
+  --bg: white;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+  /* color-scheme: dark light; */
+  hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+  min-height: 100svh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: roboto_bold;
+  max-width: 10ch;
+  line-height: 110%;
+  color: var(--black);
+}
+
+h1 span {
+  text-transform: uppercase;
+  font-family: roboto_light;
+  color: var(--grey);
+}
+
+h2 {
+  color: var(--grey);
+  font-size: 64px;
+  font-family: roboto_light;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+  color: var(--black);
+}
+
+/* smoth scroll-behavior for all sizes */
+/* (for reference: https://tinyurl.com/simplyreset) */
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    /* optional: lets a little bit of space after scroling to target
+    & also prevents content from getting under a 'sticky' header. */
+    scroll-padding-top: 3rem;
+  }
+}
+
+.container {
+  width: 81%;
+  margin-inline: auto;
+}
+
+.btn {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: fit-content;
+  padding: 24px 45px 24px 26px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.bright {
+  fill: var(--white);
+}
