@@ -24,6 +24,8 @@ footer a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  max-width: 1300px;
+  margin-inline: auto;
 }
 
 .footer_wrapper p {
@@ -35,12 +37,23 @@ footer a {
 
 footer .footer_column a {
   font-size: clamp(0.875rem, 0.4696rem + 0.4505vw, 1.1875rem);
+  transition: all 0.3s;
+}
+
+footer .footer_column a:hover {
+  color: #c4c4c4;
 }
 
 .footer_column {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer_icon_div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .icon_wrapper {
