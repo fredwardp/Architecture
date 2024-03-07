@@ -72,7 +72,7 @@ h6 {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: clamp(2.5rem, 2.0695rem + 2.1525vw, 5.5rem);
   font-family: roboto_bold;
   max-width: 10ch;
   line-height: 110%;
@@ -87,14 +87,14 @@ h1 span {
 
 h2 {
   color: var(--grey);
-  font-size: 64px;
+  font-size: clamp(2.5rem, 2.0695rem + 2.1525vw, 5.5rem);
   font-family: roboto_light;
 }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /* improve readability with max-width on paragraphs and lists */
@@ -104,6 +104,7 @@ li {
   max-width: var(--p-max-width, 65ch);
   text-wrap: pretty;
   color: var(--black);
+  font-size: clamp(1rem, 0.5946rem + 0.4505vw, 1.3125rem);
 }
 
 /* smoth scroll-behavior for all sizes */
@@ -128,10 +129,17 @@ li {
   align-items: center;
   gap: 18px;
   width: fit-content;
-  padding: 24px 45px 24px 26px;
-  font-size: 12px;
+  padding-block: 24px 24px;
+  padding-left: 30px;
+  width: 12vw;
+  font-size: clamp(0.75rem, 0.5068rem + 0.2703vw, 0.9375rem);
   letter-spacing: 2px;
   cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  gap: 25px;
 }
 
 .bright {

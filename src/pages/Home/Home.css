@@ -57,6 +57,8 @@
 
 .focus_section {
   margin-bottom: 120px;
+  margin-inline: auto;
+  width: max-content;
 }
 
 .focus_section h2 {
@@ -75,20 +77,20 @@
 }
 
 .focus_section .big_numb {
-  font-size: 200px;
+  font-size: clamp(9.375rem, 8.4781rem + 4.4843vw, 15.625rem);
   line-height: 90%;
   color: var(--light-grey);
   font-family: roboto_black;
 }
 
 .focus_section p {
-  font-size: 22px;
-  max-width: 37ch;
+  font-size: clamp(1.125rem, 1.0533rem + 0.3587vw, 1.625rem);
+  max-width: 27ch;
   line-height: 150%;
   color: var(--dark);
 }
 .focus_section div:last-of-type p {
-  max-width: 45ch;
+  max-width: 41ch;
 }
 
 .projects_section {
@@ -109,6 +111,64 @@
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
+}
+
+.project_animation {
+  overflow: hidden;
+  position: relative;
+}
+.project_animation img {
+  transition: 1s ease;
+}
+
+.upper_img {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.upper_img:hover ~ .img_slide {
+  transform: translateY(0);
+}
+
+.img_slide {
+  background-color: #333333ab;
+  height: 100%;
+  width: 100%;
+  padding: 2vw 3vw;
+  position: absolute;
+  transform: translateY(100%);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.img_slide h3 {
+  color: white;
+  font-family: roboto_bold;
+  font-size: clamp(2.5rem, 2.0695rem + 2.1525vw, 5.5rem);
+  max-width: 10ch;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+/* .project_animation .smaller_h3 {
+  font-size: clamp(2.1875rem, 2.0081rem + 0.8969vw, 3.4375rem);
+} */
+
+.img_slide div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img_slide p {
+  color: rgba(255, 255, 255, 0.796);
+  font-family: roboto_light;
+  font-size: clamp(0.75rem, 0.3446rem + 0.4505vw, 1.0625rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .push_right {
@@ -154,7 +214,7 @@ textarea {
   background-color: var(--light-grey);
   border: unset;
   border-radius: 0;
-  font-size: 14px;
+  font-size: clamp(0.8125rem, 0.7856rem + 0.1345vw, 1rem);
   min-width: 391px;
   padding: 15px 21px;
   color: var(--grey);
@@ -167,7 +227,7 @@ textarea {
   gap: 18px;
   width: fit-content;
   padding: 24px 45px 24px 26px;
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.5068rem + 0.2703vw, 0.9375rem);
   letter-spacing: 2px;
 }
 

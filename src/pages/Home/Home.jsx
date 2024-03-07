@@ -1,5 +1,6 @@
 import Arrow from "../../components/Arrow/Arrow";
 import ArrowBright from "../../components/ArrowBright/ArrowBright";
+import ArrowBright2 from "../../components/ArrowBright2/ArrowBright2";
 import "./Home.css";
 import { Link } from "react-router-dom";
 const Home = () => {
@@ -64,27 +65,57 @@ const Home = () => {
         <h2>Our Projects</h2>
         <div className="projects_img">
           <div className="projects_img_wrapper">
-            <div>
+            <div className="project_animation">
+              <div className="upper_img"> </div>
+              <div className="img_slide">
+                <h3>Sample Project</h3>
+                <div>
+                  <p>view more</p> <ArrowBright2 />
+                </div>
+              </div>
               <img src="./public/img/projects1.jpg" alt="" />
-              <div className="img_slide"></div>
             </div>
-            <div>
+            <div className="project_animation">
+              <div className="upper_img"> </div>
+              <div className="img_slide">
+                <h3>Sample Project</h3>
+                <div>
+                  <p>view more</p> <ArrowBright2 />
+                </div>
+              </div>
               <img src="./public/img/projects2.jpg" alt="" />
-              <div className="img_slide"></div>
             </div>
           </div>
           <div className="projects_img_wrapper">
-            <div>
+            <div className="project_animation">
+              <div className="upper_img"> </div>
+              <div className="img_slide">
+                <h3 className="smaller_h3">Sample Project</h3>
+                <div>
+                  <p>view more</p> <ArrowBright2 />
+                </div>
+              </div>
               <img src="./public/img/projects3.jpg" alt="" />
-              <div className="img_slide"></div>
             </div>
-            <div>
+            <div className="project_animation">
+              <div className="upper_img"> </div>
+              <div className="img_slide">
+                <h3>Sample Project</h3>
+                <div>
+                  <p>view more</p> <ArrowBright2 />
+                </div>
+              </div>
               <img src="./public/img/projects4.jpg" alt="" />
-              <div className="img_slide"></div>
             </div>
-            <div>
+            <div className="project_animation">
+              <div className="upper_img"> </div>
+              <div className="img_slide">
+                <h3>Sample Project</h3>
+                <div>
+                  <p>view more</p> <ArrowBright2 />
+                </div>
+              </div>
               <img src="./public/img/projects5.jpg" alt="" />
-              <div className="img_slide"></div>
             </div>
           </div>
         </div>

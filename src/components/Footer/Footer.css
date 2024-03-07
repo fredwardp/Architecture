@@ -10,7 +10,7 @@ footer {
 
 footer h3 {
   color: white;
-  font-size: 16px;
+  font-size: clamp(1rem, 0.5946rem + 0.4505vw, 1.3125rem);
   font-family: roboto_bold;
 }
 
@@ -28,9 +28,13 @@ footer a {
 
 .footer_wrapper p {
   color: white;
-  font-size: 14px;
+  font-size: clamp(0.875rem, 0.5507rem + 0.3604vw, 1.125rem);
   max-width: 20ch;
   letter-spacing: 0.3px;
+}
+
+footer .footer_column a {
+  font-size: clamp(0.875rem, 0.4696rem + 0.4505vw, 1.1875rem);
 }
 
 .footer_column {

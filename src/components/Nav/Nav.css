@@ -16,7 +16,7 @@ nav div {
 }
 
 nav div a {
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.3446rem + 0.4505vw, 1.0625rem);
   padding: 5px;
   color: var(--dark);
   letter-spacing: 2px;
