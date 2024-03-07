@@ -4,11 +4,13 @@ const Footer = () => {
   return (
     <footer>
       <div className="container footer_wrapper">
-        <img className="footer_logo" src="/img/logo.png" alt="" />
+        <a href="#hero">
+          <img className="footer_logo" src="/img/logo.png" alt="" />
+        </a>
         <div className="footer_column">
           <h3>Information</h3>
-          <Link>Main</Link>
-          <Link>Gallery</Link>
+          <Link to="/">Main</Link>
+          <Link to="/gallery">Gallery</Link>
           <Link>Projects</Link>
           <Link>Certification</Link>
           <Link>Contacts</Link>

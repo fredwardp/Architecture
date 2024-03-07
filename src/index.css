@@ -114,7 +114,7 @@ li {
     scroll-behavior: smooth;
     /* optional: lets a little bit of space after scroling to target
     & also prevents content from getting under a 'sticky' header. */
-    scroll-padding-top: 3rem;
+    /* scroll-padding-top: 3rem; */
   }
 }
 
