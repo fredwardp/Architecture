@@ -131,7 +131,7 @@ li {
   width: fit-content;
   padding-block: 24px 24px;
   padding-left: 30px;
-  width: 12vw;
+  width: 14vw;
   font-size: clamp(0.75rem, 0.5068rem + 0.2703vw, 0.9375rem);
   letter-spacing: 2px;
   cursor: pointer;
