@@ -7,9 +7,9 @@ import { useState } from "react";
 const Nav = () => {
   const [switcher, setSwitcher] = useState(true);
 
-  let number = 0;
+  // let number = 0;
   const toggleFunc = () => {
-    number++;
+    // number++;
 
     if (switcher === false) {
       document.documentElement.style.setProperty("--black", "#000000");
